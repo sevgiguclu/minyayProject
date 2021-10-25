@@ -164,17 +164,17 @@ header{
 
 
 @media only screen and (min-width:1200px){ /* XL */
-	#space,#mynotes{
+	#space{
 		font-size:18px;
 	}
 }
 @media only screen and (min-width:992px) and (max-width:1199px){ /* L */
-	#space,#mynotes{
+	#space{
 		font-size:16px;
 	}
 }
 @media only screen and (max-width:991px){ /* M - S - XS */
-	#space,#mynotes{
+	#space{
 		font-size:14px;
 	}
 }
