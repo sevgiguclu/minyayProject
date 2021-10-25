@@ -4,7 +4,7 @@ function firstBig(elementId){
 }
 /* INPUT GİRİŞİNİ TOUPPERCASE FORMATINA ÇEVİRME <<<<< */
 
-// onmouseover="mOver(this.id)" onmouseout="mOut(this.id)"
+/* >>>> INPUTLAR İÇİN TASARIM */
 function mOver(elementId){
     document.getElementById(elementId).style.borderColor = "#888888";
     document.getElementById(elementId).style.boxShadow = "4px 6px #888888";
@@ -13,8 +13,7 @@ function mOut(elementId){
     document.getElementById(elementId).style.borderColor = "#ced4da";
     document.getElementById(elementId).style.boxShadow = "none";
 }
-
-
+/* INPUTLAR İÇİN TASARIM <<<< */
 
 
 $(document).ready(function(){

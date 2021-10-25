@@ -20,6 +20,13 @@ body{
 	background-color: #FFF;
     text-align: center;
 	font-family: Arial,"Helvatica Neue",Helvatica,sans-serif;
+	font-family: Arial,"Helvatica Neue",Helvatica,sans-serif;
+	line-height: 1.5;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	text-align: center;
+	text-decoration: none;
 }
 @media only screen and (min-width:1200px){ /* XL */
 	body{
@@ -52,6 +59,7 @@ header{
 	border: none;
     border-bottom: 1px solid #CCC;
 	outline: none;
+	overflow: hidden;
 	background-color: #FFF;
 }
 @media only screen and (min-width:1200px){ /* XL */
@@ -98,6 +106,8 @@ header{
 	min-width: 200px;
 	max-width: 200px;
 	height: auto;
+	min-height: auto;
+	max-height: auto;
 	border: none;
 	outline: none;
 	margin: 0 auto;
@@ -109,6 +119,8 @@ header{
 #HeaderImageContent img{
     display: block;
 	height: auto;
+	min-height: auto;
+	max-height: auto;
 	border: none;
 	outline: none;
 	margin: 0 auto;
@@ -134,31 +146,35 @@ header{
 	position: relative;
 	display: block;
 	z-index: 98;
+	height: auto;
+	max-height: auto;
+	min-height: auto;
 	margin: 0 auto;
 	padding: 0;
 	padding-top: 10px;
 	padding-bottom: 25px;
 	border: none;
 	outline: none;
+	overflow: hidden;
 	background-color: #FFF;
-	vertical-align: top;
+	vertical-align: middle;
 	text-align: left;
 	left: 0;
 }
 
 
 @media only screen and (min-width:1200px){ /* XL */
-	#space{
+	#space,#mynotes{
 		font-size:18px;
 	}
 }
 @media only screen and (min-width:992px) and (max-width:1199px){ /* L */
-	#space{
+	#space,#mynotes{
 		font-size:16px;
 	}
 }
 @media only screen and (max-width:991px){ /* M - S - XS */
-	#space{
+	#space,#mynotes{
 		font-size:14px;
 	}
 }
@@ -169,8 +185,11 @@ header{
 	height: auto;
 	margin: 0 auto;
 	padding: 0;
+	padding-bottom: 10px;
 	border: none;
 	outline: none;
+	overflow: hidden;
+	text-align: left;
 	background-color: #FFF;
 	vertical-align: top;
 }
@@ -236,6 +255,7 @@ header{
 		width: 100%;
 		min-width: 100%;
 		max-width: 100%;
+		text-align: center;
 	}
 }
 
@@ -249,8 +269,10 @@ header{
 	height: auto;
 	margin: 0 auto;
 	padding: 0;
+	padding-bottom: 10px;
 	border: none;
 	outline: none;
+	overflow: hidden;
 	background-color: #FFF;
 	text-align: left;
 	vertical-align: top;
@@ -333,8 +355,11 @@ footer{
 	min-width: 100%;
 	max-width: 100%;
 	height: auto;
+	min-height: auto;
+	max-height: auto;
 	margin: 0 auto;
 	padding: 0;
+	right: 0;
 	bottom: 0;
 	border: none;
 	outline: none;
@@ -349,6 +374,8 @@ footer{
 	min-width: 100%;
 	max-width: 100%;
 	height: auto;
+	min-height: auto;
+	max-height: auto;
 	border: none;
 	border-top: 1px solid #CCC;
 	outline: none;
@@ -361,6 +388,9 @@ footer{
 
 .footerSections{
 	display: inline-block;
+	position: relative;
+	left: 0;
+	bottom: 0;
 	float: left;
 	height: auto;
 	text-align: left;
